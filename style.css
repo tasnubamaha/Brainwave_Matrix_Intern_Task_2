@@ -1,0 +1,351 @@
+body{
+    background-color: #1E201E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 30px;
+}
+
+.nav-icon {
+    color: white;
+    font-size: 25px;
+}
+
+
+header{
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.search{
+    margin-left: 80px;
+}
+
+#searchField{
+    border: 1px solid #3C3D37;
+    background-color: #1E201E;
+    padding: 20px;
+    margin-left: 20px;
+    width: 50%;
+    color: white;
+}
+
+.footer-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+.footer-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.footer-navbar a:hover {
+    color: #f9a825;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.card {
+            border-radius: 8px;
+            background-color: #0C0C0C;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+.card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f57c00;
+}
+.card .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.card .quantity button {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f57c00;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.card .quantity input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.load {
+    margin: 30px auto;
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: #1E201E;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.load:hover {
+    background-color: #f57c00;
+    color: white;
+}
+
+.popular-section {
+    padding: 20px 60px;
+    background-color: #1E201E;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: wheat;
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.popular-item {
+    display: flex;
+    align-items: center;
+    background-color: #0C0C0C;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.popular-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.popular-details {
+    flex: 1;
+}
+
+.coffee-name {
+    font-size: 20px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.coffee-description {
+    margin: 5px 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+.price-love {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.coffee-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f57c00;
+}
+
+.love-icon {
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: #f9a825;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.love-icon:hover {
+    transform: scale(1.2);
+    color: #f57c00;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    nav {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    header, .search {
+        margin-left: 40px;
+    }
+
+    #searchField {
+        width: 70%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .popular-item {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    header, .search {
+        margin-left: 20px;
+    }
+
+    #searchField {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .footer-navbar {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popular-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .popular-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .price-love {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    header, .search {
+        margin-left: 10px;
+    }
+
+    #searchField {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .popular-item {
+        width: 100%;
+    }
+
+    .load {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+
+/* Map Section Styling */
+#map {
+    height: 500px;
+    width: 80%;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-bottom: 90px;
+}
+
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+

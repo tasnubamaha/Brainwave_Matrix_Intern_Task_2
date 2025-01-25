@@ -1,0 +1,75 @@
+[
+    {
+      "name": "Espresso",
+      "image": "images/coffee1.jpeg",
+      "description": "Rich and bold coffee",
+      "price": 4.00
+    },
+    {
+      "name": "Cappuccino",
+      "image": "images/coffee2.jpeg",
+      "description": "Foamy and creamy coffee",
+      "price": 5.00
+    },
+    {
+      "name": "Latte",
+      "image": "images/coffee22.jpg",
+      "description": "Smooth and milky coffee",
+      "price": 4.50
+    },
+    {
+      "name": "Frappucino",
+      "image": "images/coffee3.jpeg",
+      "description": "With almonds and dates",
+      "price": 4.30
+    },
+    {
+      "name": "Macha",
+      "image": "images/coffee4.jpeg",
+      "description": "With dark and white chocolates",
+      "price": 6.50
+    },
+    {
+      "name": "Milky Bar",
+      "image": "images/coffee5.jpeg",
+      "description": "With raw milk and chocolate bar",
+      "price": 3.50
+    },
+    {
+      "name": "Jamaican Mountain Coffee",
+      "image": "images/coffee7.jpeg",
+      "description": "With Jamaican coffee beans",
+      "price": 8.00
+    },
+    {
+      "name": "White Creme Latte",
+      "image": "images/coffee8.jpeg",
+      "description": "Smooth and raw coffee beans",
+      "price": 3.50
+    },
+    {
+      "name": "Frappucino",
+      "image": "images/frappucino.jpg",
+      "description": "Smooth and milky coffee",
+      "price": 4.50
+    },
+    {
+      "name": "Iced Latte",
+      "image": "images/iced latte.jpg",
+      "description": "Iced creme coffee",
+      "price": 4.50
+    },
+    {
+      "name": "Espresso",
+      "image": "images/coffee8espresso.jpeg",
+      "description": "Black coffee",
+      "price": 4.50
+    },
+    {
+      "name": "Cold Brew",
+      "image": "images/cold brew.jpg",
+      "description": "Iced brewing coffee",
+      "price": 4.50
+    }
+  ]
+  

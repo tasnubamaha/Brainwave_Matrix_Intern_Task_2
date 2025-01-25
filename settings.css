@@ -1,0 +1,109 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1E201E;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background-color: #1E201E;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Main Container */
+.settings-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Groups */
+.settings-group {
+    margin-bottom: 20px;
+}
+
+.settings-group h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: orangered;
+}
+
+/* Settings Items */
+.settings-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.settings-item label {
+    flex: 1;
+    font-size: 14px;
+    color: white;
+}
+
+.settings-item input[type="text"],
+.settings-item input[type="email"],
+.settings-item select {
+    flex: 2;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.settings-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Toggle Style */
+.settings-item.toggle {
+    justify-content: space-between;
+}
+
+/* Save Button */
+.save-btn {
+    display: block;
+    width: 30%;
+    margin-left: 300px;
+    padding: 12px 20px;
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.save-btn:hover {
+    background-color: #754E1A;
+}
+
+.back-arrow {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.back-arrow i {
+    color: white;
+    margin-left: -900px;
+}
+
+.back-arrow:hover {
+    color: #754E1A;
+}

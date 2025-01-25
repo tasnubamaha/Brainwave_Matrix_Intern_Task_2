@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+   <nav>
+    <div class="nav-icon">
+        <a style="color: white;" href="settings.html"><i class="fa-solid fa-bars"></i></a>
+    </div>
+    <div class="nav-icon">
+        <a style="color: white;" href="profile.html"><i class="fa-solid fa-user"></i></a>
+    </div>
+   </nav>
+<!-- headet -->
+   <header>
+    <h1 style="color: wheat;">Find your best coffee for you!!!</h1>
+   </header>
+<!-- search -->
+   <section class="search">
+        <div>
+            <i style="color: orangered" class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchField" placeholder="Search for coffee...">
+        </div>
+   </section>
+  
+<!-- coffees -->
+<section>
+    <div class="card-container">
+        <div class="card" data-name="Cappuccino">
+            <img src="images/coffee2.jpeg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p class="description">Foamy and creamy coffee</p>
+            <p class="price">$5.00</p>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Latte">
+            <img src="images/coffee22.jpg" alt="Latte">
+            <h3>Latte</h3>
+            <p class="description">Smooth and milky coffee</p>
+            <p class="price">$4.50</p>
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        
+        <div class="card" data-name="Macha">
+            <img src="images/coffee4.jpeg" alt="Macha">
+            <h3>Macha</h3>
+            <p class="description">With dark and white chocolates</p>
+            <p class="price">$6.50</p>
+            
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Milky Bar">
+            <img src="images/coffee5.jpeg" alt="Milky Bar">
+            <h3>Milky Bar</h3>
+            <p class="description">With raw milk and chocolate bar</p>
+            <p class="price">$3.50</p>
+           
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Jamaican Mountain Coffee">
+            <img src="images/coffee7.jpeg" alt="Jamaican Mountain Coffee">
+            <h3>Jamaican Mountain Coffee</h3>
+            <p class="description">With jamaican coffee beans</p>
+            <p class="price">$8.00</p>
+           
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="White Creme Latte">
+            <img src="images/coffee8.jpeg" alt="White Creme Latte">
+            <h3>White Creme Latte</h3>
+            <p class="description">Smooth and raw coffee beans</p>
+            <p class="price">$3.50</p>
+          
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Frappucino">
+            <img src="images/frappucino.jpg" alt="Frappucino">
+            <h3>Frappucino</h3>
+            <p class="description">Smooth and milky coffee</p>
+            <p class="price">$4.50</p>
+           
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Iced Latte">
+            <img src="images/iced latte.jpg" alt="Iced Latte">
+            <h3>Iced Latte</h3>
+            <p class="description">Iced creme coffee</p>
+            <p class="price">$4.50</p>
+          
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Espresso">
+            <img src="images/coffee8espresso.jpeg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p class="description">black coffee</p>
+            <p class="price">$4.50</p>
+           
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+        <div class="card" data-name="Cold brew">
+            <img src="images/cold brew.jpg" alt="Cold Brew">
+            <h3>Cold Brew</h3>
+            <p class="description">Iced brewing coffee</p>
+            <p class="price">$4.50</p>
+           
+            <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+    </div>
+    <button class="load" id="loadMoreBtn">Load More</button>
+     <!-- No results message -->
+<p id="noResults" style="display: none; color: white; text-align: center; margin-top: 20px;">
+    No matching coffee found.
+</p>
+</section>
+
+<!-- popular section -->
+<section class="popular-section">
+    <h1 class="section-title">Popular Items</h1>
+   <div style="display: flex; justify-content: space-around;">
+    <div class="popular-item">
+        <img src="images/iced latte.jpg" alt="Coffee" class="popular-image">
+        <div class="popular-details">
+            <h3 class="coffee-name">Iced Latte</h3>
+            <p class="coffee-description">A creamy and rich coffee blend.</p>
+            <div class="price-love">
+                <span class="coffee-price">$4.50</span>
+                <button class="love-icon"><i class="fa-solid fa-heart"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="popular-item">
+        <img src="images/espresso with chocolate.jpeg" alt="Coffee" class="popular-image">
+        <div class="popular-details">
+            <h3 class="coffee-name">Espresso with Chocolate</h3>
+            <p class="coffee-description">Dark coffee with blended chocolates.</p>
+            <div class="price-love">
+                <span class="coffee-price">$6.50</span>
+                <button class="love-icon"><i class="fa-solid fa-heart"></i></button>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+
+<!-- map -->
+<section>
+    <h1 style="color: white;">Coffee Origin Stories</h1>
+    <p style="color: wheat;">Discover the journey of your coffee!</p>
+</section>
+
+<div id="map"></div>
+
+<!-- footer -->
+   <div class="footer-navbar">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <div class="cart-container">
+        <a href="cart.html"><i class="fa fa-cart-shopping"></i>
+            <span class="cart-count">0</span></a>
+      </div>
+    <a href="recycle.html"><i class="fa-solid fa-recycle"></i></a>
+    <a href="notification.html"><i class="fa-solid fa-bell"></i></a>
+</div>
+<script src="index.js" defer></script>
+<script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+</body>
+</html>

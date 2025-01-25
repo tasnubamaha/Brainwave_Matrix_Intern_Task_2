@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1E201E;
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logout-button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .logout-button i {
+    margin-left: 5px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }
+  
+ 
+  .profile-card {
+    background-color: wheat;
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  h2{
+    color: white;
+    text-align: center;
+  }
+
+  .profile-picture img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 620px;
+  }
+  
+  .back-arrow {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+ .back-arrow i {
+    color: wheat;
+}
+
+ .back-arrow:hover {
+    color: #754E1A;
+}
+
+.profile-picture {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #6f4e37;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.upload-button i {
+  margin-right: 5px;
+}
+
+.upload-button:hover {
+  background-color: #754e1a;
+}
